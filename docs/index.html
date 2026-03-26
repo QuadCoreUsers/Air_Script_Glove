@@ -1,59 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Air Script Glove Project</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        h1 { color: #333; }
-        .box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Script Glove</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f5f5f5;
+    line-height: 1.6;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.tag {
+    display: inline-block;
+    background: #ddd;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    color: white;
+}
+</style>
+
 </head>
 
 <body>
 
-<div class="box">
-    <h1>Air Script Glove</h1>
+<header>
+    <h1>✋ Air Script Glove</h1>
+    <p>Gesture to Text Conversion System</p>
+</header>
 
-    <p><b>Project Type:</b> AI + Embedded System</p>
-
+<section>
+    <h2>📌 Project Overview</h2>
     <p>
-    This project converts hand-written air gestures into text using an MPU6050 sensor mounted on a glove.
-    The system uses ESP32 for processing and Edge Impulse for gesture recognition.
+    Air Script Glove is an AI-based embedded system that converts air-written gestures into text.
+    It is designed to help motor-impaired individuals communicate easily without using keyboards.
     </p>
+</section>
 
-    <h3>Components Used:</h3>
+<section>
+    <h2>⚙️ System Architecture</h2>
     <ul>
-        <li>ESP32 DevKit V1</li>
-        <li>MPU6050 Sensor</li>
-        <li>OLED Display</li>
-        <li>TP4056 Charging Module</li>
-        <li>Push Button</li>
+        <li>MPU6050 captures motion data</li>
+        <li>ESP32 processes the data</li>
+        <li>Edge Impulse performs gesture recognition</li>
+        <li>OLED displays output</li>
+        <li>Bluetooth transmits text</li>
     </ul>
+</section>
 
-    <h3>Features:</h3>
+<section>
+    <h2>🔩 Components</h2>
+    <div class="tag">ESP32</div>
+    <div class="tag">MPU6050</div>
+    <div class="tag">OLED</div>
+    <div class="tag">TP4056</div>
+    <div class="tag">Push Button</div>
+</section>
+
+<section>
+    <h2>🔄 Working</h2>
+    <ol>
+        <li>User writes in air</li>
+        <li>Sensor captures motion</li>
+        <li>AI model classifies gesture</li>
+        <li>Output shown on OLED</li>
+        <li>Text sent via Bluetooth</li>
+    </ol>
+</section>
+
+<section>
+    <h2>✨ Features</h2>
     <ul>
-        <li>Air gesture recognition (A, C, E, I, V)</li>
-        <li>Special gestures for Space, Enter, Backspace</li>
-        <li>Bluetooth text transmission</li>
-        <li>OLED display feedback</li>
+        <li>Recognizes A, C, E, I, V</li>
+        <li>Space → Right swipe</li>
+        <li>Backspace → Left swipe</li>
+        <li>Enter → Upward motion</li>
+        <li>Real-time display</li>
     </ul>
+</section>
 
-    <h3>Application:</h3>
-    <p>
-    Designed for motor-impaired individuals to enable communication through air writing.
-    </p>
+<section>
+    <h2>🎯 Applications</h2>
+    <ul>
+        <li>Assistive communication</li>
+        <li>Wearable computing</li>
+        <li>Hands-free typing</li>
+    </ul>
+</section>
 
-    <h3>Status:</h3>
-    <p>Work in Progress</p>
-</div>
+<section>
+    <h2>🚧 Status</h2>
+    <p>Currently in development phase with limited gesture set.</p>
+</section>
+
+<section>
+    <h2>🔮 Future Scope</h2>
+    <ul>
+        <li>Full alphabet recognition</li>
+        <li>Mobile app integration</li>
+        <li>Improved accuracy</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Air Script Glove Project | ECE Final Year</p>
+</footer>
 
 </body>
 </html>
